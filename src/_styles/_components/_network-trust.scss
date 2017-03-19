@@ -1,0 +1,16 @@
+// Network trust
+.jel-network-trust {
+  padding: $section-padding 0;
+  background: $section-even-bg;
+  border-top: 1px solid $gray-lighter;
+
+  img {
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.jel-network-trust__headline {
+  @extend %headline;
+}
+

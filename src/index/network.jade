@@ -1,0 +1,24 @@
+include ../_modules/preise/preise-row
+
+section.jel-network-trust#preise
+  .container
+    h2.jel-network__headline Preise
+    table.table
+      thead
+        tr
+          th Karton
+          th Stück
+          th Einzelpreis
+          th Brutto
+          th Rabatt
+          th Netto
+      tbody
+        +preise-row('', '2', '20,00 €', '40,00 €', '5%', '38,00 €')
+        +preise-row('', '4', '20,00 €', '80,00 €', '7,5%', '74,00 €')
+        +preise-row('', '6', '20,00 €', '120,00 €', '10%', '105,00 €')
+        +preise-row('', '9', '20,00 €', '180,00 €', '15%', '153,00 €')
+        +preise-row('', '15', '20,00 €', '300,00 €', '20%', '240,00 €')
+        +preise-row('1', '30', '20,00 €', '600,00 €', '30%', '420,00 €')
+        +preise-row('2', '60', '20,00 €', '1200,00 €', '38%', '740,00 €')
+        +preise-row('3', '90', '20,00 €', '1800,00 €', '40%', '1.080,00 €')
+        +preise-row('15', '450', '20,00 €', '9000,00 €', '45%', '4.950,00 €')

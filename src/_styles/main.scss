@@ -1,0 +1,79 @@
+/*
+ * Bootstrap
+ */
+
+// Options
+// $enable-rounded: false;
+$enable-shadows: true;
+$enable-transitions: true;
+$enable-flex: true;
+
+// Variables
+// $gray-dark:                 #373a3c !default;
+$gray-dark:       #323A45;
+$gray:            #55595c !default;
+$gray-light:      #818a91 !default;
+$gray-lighter:    #eceeef !default;
+// $gray-lightest:             #f7f7f9 !default;
+// $gray-lightest: #D7DAE0;
+
+// @see http://www.colourlovers.com/palette/1416354/GiorgosPalette1
+// $brand-primary: #f2a900;
+$brand-primary:   #009999;
+$brand-secondary: #F2A900;
+$brand-success:   #97C133;
+$brand-info:      #57D9C7;
+// $brand-warning: #F4E49C;
+$brand-warning:   #F2A900;
+$brand-danger:    #E55C00;
+$brand-inverse:   #222222;
+
+// Type
+$font-family-sans-serif: 'Open Sans', open-sans, sans-serif;
+
+// Headings
+$headings-font-weight: 300;
+
+// Navbar
+$navbar-border-radius: 0;
+// $navbar-light-active-color: $gray-light;
+// $navbar-light-active-color: $brand-warning;
+// $navbar-light-hover-color: $brand-warning;
+
+// Card
+$card-spacer-x: .5rem;
+$card-spacer-y: .5rem;
+$card-border-width: 0;
+
+// Buttons
+// $btn-secondary-color:            $gray-dark !default;
+// $btn-secondary-bg:               #fff !default;
+$btn-secondary-border: $gray-light;
+
+/*
+ * Custom to this page
+ */
+$section-padding: 4rem;
+$section-even-bg: #f8f8f8;
+$navigation-border: 1px solid $gray-lighter;
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import '_helpers/placeholders';
+@import '../_layouts/header/header';
+@import '../_layouts/footer/footer';
+@import '_components/banner';
+@import '_components/features';
+@import '_components/network';
+@import '_components/network-trust';
+@import '_components/product';
+@import '_components/signup';
+@import '_components/testimonials';
+@import '_components/trust';
+
+body {
+  font-weight: 300;
+}
+
+.card {
+  @include box-shadow(0 0 55px 0 rgba(0,0,0,.2));
+}

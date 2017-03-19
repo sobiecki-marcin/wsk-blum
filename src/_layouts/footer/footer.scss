@@ -1,0 +1,46 @@
+// Footer
+.footer {
+  padding: $section-padding 0;
+  background-color: $brand-inverse;
+  color: $gray-light;
+
+  h5 {
+    color: $gray-lighter;
+  }
+
+  ul a {
+    color: $gray-light;
+
+    &:hover {
+      color: $gray-lighter;
+    }
+  }
+
+  &__contact {
+    text-align: center;
+    padding: 1rem 0.5rem;
+    background: $gray-dark;
+    font-size: $font-size-h5;
+    border-radius: $border-radius;
+
+    strong {
+      color: $gray-lighter;
+    }
+
+    a {
+      color: $gray-light;
+
+      &:hover {
+        color: $gray-lighter;
+      }
+    }
+  }
+
+  hr {
+    border-color: $gray-dark;
+  }
+
+  ul {
+    @include list-unstyled;
+  }
+}

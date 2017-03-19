@@ -1,0 +1,44 @@
+// Features
+.jel-features {
+  padding: $section-padding 0;
+}
+
+.jel-features__headline {
+  @extend %headline;
+}
+
+.jel-features__icons {
+  font-size: $font-size-sm;
+  text-align: center;
+
+  img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto $spacer-y;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .jel-features__icons {
+    text-align: left;
+    line-height: 4rem;
+
+    img {
+      width: 4rem;
+      margin-right: $spacer-x;
+      float: left;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .jel-features__icons {
+    line-height: $line-height-base;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .jel-features__icons {
+    line-height: 4rem;
+  }
+}

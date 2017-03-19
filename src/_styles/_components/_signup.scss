@@ -1,0 +1,10 @@
+// Signup
+.jel-signup {
+  padding: $section-padding 0;
+  text-align: center;
+}
+
+.jel-signup__headline {
+  @extend %headline;
+}
+

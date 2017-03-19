@@ -1,0 +1,8 @@
+// Network
+.jel-network {
+  padding: $section-padding 0;
+}
+
+.jel-network__headline {
+  @extend %headline;
+}

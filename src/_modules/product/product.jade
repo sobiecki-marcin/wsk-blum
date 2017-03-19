@@ -1,0 +1,11 @@
+mixin product(image, title, subtitle, contentModifierClassName)
+  .container
+    .row
+      .col-xs-12.col-md-6.push-md-6.jel-product__content(class= contentModifierClassName)
+        h2.jel-product__headline= title
+        h3.jel-product__subheadline= subtitle
+        p.jel-product__text-block
+          block
+
+      .col-xs-12.col-md-6.pull-md-6.jel-product__img.jel-product__img--right
+        img(src='/images/products/' + image)

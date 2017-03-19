@@ -1,0 +1,49 @@
+// Product
+.jel-product {
+  padding: 0;
+  border-top: 1px solid $gray-lighter;
+  overflow-x: hidden;
+}
+
+.jel-product--even {
+  background-color: $section-even-bg;
+}
+
+.jel-product--first {
+  padding: 7rem 0 $section-padding;
+}
+
+.jel-product__headline {
+  text-transform: uppercase;
+  font-size: $font-size-h1;
+  margin-bottom: 1rem;
+}
+
+.jel-product__text-block {
+  color: $gray-light;
+  line-height: 2rem;
+}
+
+.jel-product__img {
+  align-self: flex-end;
+}
+
+.jel-product__content--vertical-center {
+  align-self: center;
+}
+
+.jel-product__img--right {
+  img {
+    float: right;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .jel-product--first {
+    padding-top: 0;
+  }
+
+  .jel-product__headline {
+    margin-top: 2rem;
+  }
+}
